@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chocs</title>
+    <link rel="icon" href="../pic/chocs.png">
+</head>
+<body>
+    <!-- Header -->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="#" class="logo">
+            <img src="../pic/Chocs.png" alt="">
+        </a>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../product/index.html">Products</a></li>
+            <li><a href="#" id="current-nav">Purchase</a></li>
+            <li><a href="../about/index.html">About</a></li>
+            <li><a href="../index.html#location">Location</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+        <section class="home">
+            <h2 class="content-text">ORDER<span> FORM</span></h2>
+            <p class="content-p">Please fill this form in order to purchase the product</p>
+            <div class="form">
+                <form action="#">
+                    <label for="fname"></label>
+                </form>
+            </div>
+        </section>
+        <section class="order">
+            <form action="#">
+                <label>Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name (4-16 character).." required>
+                <label>Phone Number</label>
+                <input type="text" id="number" name="number" placeholder="Input Phone Number.." required>
+                <label>Quantity</label>
+                <input type="text" id="qty" name="qty" placeholder="Input Quantity (1-100).." required>
+                <label>Product Choice</label>
+                <select id="product" name="product">
+                    <option>Dark Chocolate 250gr</option>
+                    <option>Milk Chocolate 200gr</option>
+                    <option>White Chocolate 250gr</option>
+                    <option>Chocolate Brownies</option>
+                    <option>Belgian Chocolate 100gr</option>
+                    <option>Dark Chocolate 100gr</option>
+                    <option>Hazelnut Chocolate Spread</option>
+                    <option>Chocolate Spread</option>
+                </select>
+                <label>Address</label>
+                <textarea id="address" name="address" placeholder="Input Address.." style="height:10rem" required></textarea>
+                <input type="checkbox" name="agree" id="checker">
+                <label>I Agree to all term and conditions</label>
+                <br>
+                <input type="submit" id="Submit" >
+            </form>
+        </section>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        </div>
+        <ul class="list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../product/index.html">Products</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="../about/index.html">About</a></li>
+            <li><a href="../index.html#location">Location</a></li>
+        </ul>
+        <p class="copyright">Chocs @ 2022</p>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
